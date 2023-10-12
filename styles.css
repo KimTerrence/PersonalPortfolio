@@ -151,7 +151,7 @@ footer{
 }
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){ /*Tab/ipad*/
   /*navbar*/
 .nav {
   background-color: white;
@@ -168,7 +168,7 @@ footer{
 .nav .nav-list {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
   padding: 0 3% 0 0;
 }
@@ -289,6 +289,7 @@ border: 10px solid white;
   align-items: center;
   justify-content: center;
   gap: 20px;
+ 
 }
 
 footer{
@@ -301,3 +302,157 @@ footer{
   font-size: xx-small;
 }
 }
+
+@media screen and (max-width:480px){ /*-------mobile-------*/
+  body {
+    width: 100%;
+    background-color: white;
+    font-size: small;
+  }
+  .nav {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: cener;
+    justify-content: space-between;
+    border: solid black 1px;
+    position: fixed;
+    font-size: 0.8rem;
+  }
+  
+  .nav .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0 3% 0 0;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+  }
+  .nav ul li a:hover{
+    text-decoration:underline;
+    color: orange;
+  }
+  
+  .logo {
+    height: 40px;
+    align-self: center;
+  }
+  
+  /* welcome seciton */
+  .welcome-section {
+    height: 795px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+  }
+  
+  .descrip {
+  text-align: center;
+  }
+  .prof-pic{
+    max-width: 100%;
+    width: 400px;
+    border-radius: 50%;
+    transition: 1s;
+  }
+  .prof-pic:hover{
+    max-width: 100%;
+    width: 500px;
+    border-radius: 50% 20%;
+    background-color: orange;
+    transition: 1s;
+  }
+  /*about-section*/
+  .about-section {
+    height: 795px;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-section .about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  align-items: center;
+  }
+  .certif-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .certif-container img {
+  width: 600px;
+  max-width: 100%;
+  transition: 1s;
+  border: 10px solid white;
+  }
+  .certif-container img:hover{
+   border: 10px solid orange;
+   width: 590px;
+   transition: 1s;
+   border-radius: 5%;
+  }
+  .resume-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap:40px;
+  }
+  
+  /*projects-section*/
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    height: 795px;
+    padding-top: 65px;
+    text-align: center;
+    gap: 10px;
+    
+  }
+  .projects-grid img {
+    max-width: 100%;
+    width: 800px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .projects-grid {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  /*contact section*/
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    height: 795px;
+    padding-top: 65px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+  }
+  
+  footer{
+    display: flex;
+    height: 50px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: xx-small;
+  }
+  }
